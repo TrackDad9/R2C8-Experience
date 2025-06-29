@@ -1,18 +1,12 @@
 // Dynamically load all IMG_*.jpeg files from the gfx/Gallery folder
-const photoFilenames = [
-  "IMG_9736.jpeg",
-  "IMG_9729.jpeg",
-  "IMG_9421.jpeg",
-  "IMG_9342.jpeg",
-  "IMG_9226.jpeg",
-  "IMG_9154.jpeg",
-  "IMG_9149.jpeg"
+const photos = [
+  { src: "gfx/Gallery/IMG_9736.jpeg", caption: "R2-C8 with Neil Armstrong's Corvette!" },
+  { src: "gfx/Gallery/IMG_9729.jpeg", caption: "R2 with an F-14 Tomcat" },
+  { src: "gfx/Gallery/IMG_9421.jpeg", caption: "R2-C8 Visits Old Town Kissimmee" },
+  { src: "gfx/Gallery/IMG_9342.jpeg", caption: "A Peek at the \"Engine\"" },
+  { src: "gfx/Gallery/IMG_9154.jpeg", caption: "Southern R2 Builder's Club Challenge Coin" },
+  { src: "gfx/Gallery/IMG_9149.jpeg", caption: "R2-C8 riding shotgun in the C8" }
 ];
-
-const photos = photoFilenames.map(filename => ({
-  src: `gfx/Gallery/${filename}`,
-  caption: filename
-}));
 
 const grid = document.getElementById('photoGrid');
 photos.forEach(photo => {
