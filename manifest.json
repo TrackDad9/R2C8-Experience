@@ -1,16 +1,16 @@
 {
-    "name": "The R2-C8 Experience",
-    "short_name": "R2-C8",
+    "name": "R2C8",
+    "short_name": "R2C8",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#18191c",
+    "background_color": "#c00b1e",
     "theme_color": "#c00b1e",
     "description": "Showcase for The R2-C8 Experience — 2022 Corvette Z51 & Astromech",
     "icons": [
       {
-        "src": "logo.png",
-        "type": "image/png",
-        "sizes": "192x192"
+        "src": "gfx/r2c8-icon.svg",
+        "sizes": "192x192",
+        "type": "image/svg+xml"
       }
     ]
   }
