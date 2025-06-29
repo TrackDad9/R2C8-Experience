@@ -8,6 +8,11 @@
     "description": "Showcase for The R2-C8 Experience — 2022 Corvette Z51 & Astromech",
     "icons": [
       {
+        "src": "gfx/r2c8-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
         "src": "gfx/r2c8-icon.svg",
         "sizes": "192x192",
         "type": "image/svg+xml"
