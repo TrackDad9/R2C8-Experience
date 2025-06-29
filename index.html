@@ -12,18 +12,18 @@
   <header>
     <img src="gfx/splash.png" alt="R2-C8 Experience Logo" class="logo">
    
-    <p class="subtitle">2022 Corvette Stingray Z51 • R2-C8 Astromech Droid</p>
   </header>
   <img src="gfx/r2-cd-canto-bight.png" alt="R2-C8 Canto Bight" style="width:100%;max-width:100%;height:auto;display:block;margin:2rem 0;border-radius:1rem;box-shadow:0 2px 8px #0004;background:#fff;">
+  <button id="playR2Sound" style="display:block;width:100%;margin:0 0 2rem 0;padding:1.2rem 0;font-size:1.2rem;border-radius:0.5rem;background:#c00b1e;color:#fff;border:none;cursor:pointer;">Message from R2-C8!</button>
   <section class="droid-details">
-    <h2>About R2-C8</h2>
+    <h2>R2-C8 Astromech Droid - About R2-C8</h2>
     <p>
-      R2-C8 is an astromech droid who races with Nitu Jain on Cantobight. <br>
+      R2-C8 is an astromech droid who races with Nitu Jain on Cantobight. <br><br>
       Astromech droids are a class of versatile, intelligent robots in the Star Wars universe, designed primarily for starship maintenance and repair, navigation, and piloting assistance. Known for their resourcefulness and loyalty, these droids—like the iconic R2-D2—are equipped with a variety of tools and features that allow them to interface with computer systems, perform technical repairs, and even assist in piloting spacecraft. Their compact, durable design and problem-solving abilities make them indispensable companions to pilots and adventurers across the galaxy.
     </p>
   </section>
   <section class="car-details">
-    <h2>About the Car</h2>
+    <h2>2022 Corvette Stingray Z51 - About the Car</h2>
     <p>
       <b>2022 Corvette Stingray Z51</b> in Hypersonic Grey.<br><br>
       The 2022 C8 Corvette, Chevrolet's first mid-engine production sports car, delivers exhilarating performance with its 6.2-liter naturally aspirated V8 engine producing up to 495 horsepower and 470 lb-ft of torque when equipped with the Z51 Performance Package.<br><br>
@@ -58,6 +58,12 @@
         var audio = new Audio('sounds/31.mp3');
         audio.play();
       }, 2000); // 2 seconds delay
+    });
+
+    document.getElementById('playR2Sound').addEventListener('click', function() {
+      var audio = new Audio('sounds/31.mp3');
+      audio.play();
+      this.style.display = 'none';
     });
   </script>
 </body>
