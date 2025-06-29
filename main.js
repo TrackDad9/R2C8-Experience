@@ -1,6 +1,5 @@
 // Dynamically load all IMG_*.jpeg files from the gfx/Gallery folder
 const photoFilenames = [
-  "IMG_9753.jpeg",
   "IMG_9736.jpeg",
   "IMG_9729.jpeg",
   "IMG_9421.jpeg",
