@@ -16,16 +16,16 @@
   <img src="gfx/r2-cd-canto-bight.png" alt="R2-C8 Canto Bight" style="width:100%;max-width:100%;height:auto;display:block;margin:2rem 0;border-radius:1rem;box-shadow:0 2px 8px #0004;background:#fff;">
   <button id="playR2Sound" style="display:block;width:100%;margin:0 0 2rem 0;padding:1.2rem 0;font-size:1.2rem;border-radius:0.5rem;background:#c00b1e;color:#fff;border:none;cursor:pointer;">Message from R2-C8!</button>
   <section class="droid-details">
-    <h2>R2-C8 Astromech Droid - About R2-C8</h2>
+    <h2>R2-C8 - Astromech Droid </h2>
     <p>
-      R2-C8 is an astromech droid who races with Nitu Jain on Cantobight. <br><br>
+      R2-C8 is an astromech droid who races with Nitu Jain on Canto Bight. Canto Bight is a coastal city located on the desert planet Cantonica in the Star Wars galaxy. It's known for its opulent casinos, racetracks, and being a haven for wealthy tourists. The city is situated on the shores of the Sea of Cantonica, an artificial ocean.<br><br>
       Astromech droids are a class of versatile, intelligent robots in the Star Wars universe, designed primarily for starship maintenance and repair, navigation, and piloting assistance. Known for their resourcefulness and loyalty, these droids—like the iconic R2-D2—are equipped with a variety of tools and features that allow them to interface with computer systems, perform technical repairs, and even assist in piloting spacecraft. Their compact, durable design and problem-solving abilities make them indispensable companions to pilots and adventurers across the galaxy.
     </p>
   </section>
   <section class="car-details">
-    <h2>2022 Corvette Stingray Z51 - About the Car</h2>
+    <h2>2022 Corvette Stingray Z51</h2>
     <p>
-      <b>2022 Corvette Stingray Z51</b> in Hypersonic Grey.<br><br>
+      <b>2022 Corvette Stingray Z51</b> in Hypersonic Grey with custom red trim.<br><br>
       The 2022 C8 Corvette, Chevrolet's first mid-engine production sports car, delivers exhilarating performance with its 6.2-liter naturally aspirated V8 engine producing up to 495 horsepower and 470 lb-ft of torque when equipped with the Z51 Performance Package.<br><br>
       This powerhouse enables the C8 to accelerate from 0 to 60 mph in just 2.9 seconds, making it one of the fastest cars in its class. With its advanced dual-clutch 8-speed transmission, precise handling, and a top speed of nearly 194 mph, the C8 Corvette offers a thrilling driving experience that rivals many European exotics, all while maintaining the iconic American muscle car spirit.<br><br>
       Lowered, Paragon Performance Exhaust (carbon tips), Victor Racing GT3 rear wing, carbon fiber GT front splitter & side skirts (Racing Sport Concepts).<br>
@@ -63,6 +63,10 @@
     document.getElementById('playR2Sound').addEventListener('click', function() {
       var audio = new Audio('sounds/77.mp3');
       audio.play();
+      // Haptic feedback (vibration)
+      if (window.navigator.vibrate) {
+        window.navigator.vibrate(100); // vibrate for 100ms
+      }
       this.style.display = 'none';
     });
   </script>
